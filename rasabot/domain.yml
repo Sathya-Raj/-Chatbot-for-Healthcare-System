@@ -19,6 +19,16 @@ intents:
   - migrane
   - cluster_headache
   - tension_headache
+  - qu_appointment
+  - general_practitioner
+  - ent_specialist
+  - homeopathy
+  - ayurveda
+  - pediatrician
+  - dermatologist
+  - dentist
+  - gynaecologist
+  - psychiatrist
 
 actions:
   - action_new_sym
@@ -40,13 +50,28 @@ actions:
   - utter_migrane
   - utter_tension_headache
   - utter_cluster_headache
+  - utter_hospitals_near
+  - utter_orthopedic_hospital_near
+  - utter_which_doctor
+  - utter_general_practitioner
+  - utter_ent_specialist
+  - utter_homeopathy
+  - utter_ayurveda
+  - utter_pediatrician
+  - utter_dermatologist
+  - utter_dentist
+  - utter_gynaecologist
+  - utter_psychiatrist
+  - utter_appointment_list_provided
 
 responses:
   utter_greet:
     - text: "Hey! I am your medical assistant. How can i help you"
 
   utter_goodbye:
-    - text: "Bye"
+    - text: "Bye!!"
+    - text: "Take care, Byee"
+    - text: "Have a nice Day!!Byee"
 
   utter_iamabot:
     - text: "I am a your healthcare assistant"
@@ -76,7 +101,7 @@ responses:
     - text: "This is a symptom of fever, you should take a tablet of crocin after you have your meal."
 
   utter_fracture_sym:
-    - text: "okay, did you get hurt, or it is a sudden aching."
+    - text: "okay, did you get hurt, or is  it a sudden aching."
 
   utter_fracture_details:
     - text: "ok, is there a swelling or a physical deformity or bleeding at the aching region."
@@ -85,7 +110,7 @@ responses:
     - text: "- okay, it is a common symptom of fracture, you should consult a doctor."
 
   utter_headache_type:
-    - text: "what kind of headache do you have : 1. Migrane headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Ocassional"
+    - text: "what kind of headache do you have :<br> 1. Migrane headache - intense throbbing pain on just one side of the head. <br> 2. Cluster headaches - severe and recurrent headaches <br> 3. Tension Headache - Ocassional"
 
   utter_migrane:
     - text: "symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days otherwise consult to doctor"
@@ -95,6 +120,46 @@ responses:
 
   utter_tension_headache:
     - text: "symptom noted. The cause of tension headaches is unclear, but stress, anxiety, and depression are common triggers. If it happens regularly then consult to doctor"
+  
+  utter_hospitals_near:
+    - text: "<br>Click here to <a href='https://www.google.com/maps/search/hospitals+near+me/' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>!  "
+
+  utter_orthopedic_hospital_near:
+    - text: "Okay, it is a common symptom of fracture, you should consult a doctor. <br>Click here to <a href='https://www.google.com/maps/search/orthopedic+hospital+near+me/' title='Go to Hospitals Near You' target='_blank'>View Orthopedic Hospitals Near You</a> "
+
+  utter_which_doctor:
+    - text: "OK, sure will help you with it. <br>Can you specify the Speciality of doctor you want to book appointment with?"
+
+  utter_general_practitioner:
+    - text: "You may consult any medical professional in your locality."
+
+  utter_ent_specialist:
+    - text: "Here is the list of ENT Doctors available near you. <br>Click here to <a href='https://www.google.com/search?q=ent+specialist+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_homeopathy:
+    - text: "Here is the list of homeopathy Doctors available near you. <br>Click here to <a href='https://www.google.com/search?q=homeopathy+doctors+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_ayurveda:
+    - text: "Here is the list of Ayurvedic Doctors available near you. <br>Click here to <a href='https://www.google.com/search?q=ayurvedic+doctors+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_pediatrician:
+    - text: "Here is the list of pediatricians available near you. <br>Click here to <a href='https://www.google.com/search?q=pediatricians+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_dermatologist:
+    - text: "Here is the list of dermatalogists available near you. <br>Click here to <a href='https://www.google.com/search?q=dermatologists+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_dentist:
+    - text: "Here is the list of dentists available near you. <br>Click here to <a href='https://www.google.com/search?q=dentists+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+ 
+  utter_gynaecologist:
+    - text: "Here is the list of gynaecologists available near you. <br>Click here to <a href='https://www.google.com/search?q=gynaecologists+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_psychiatrist:
+    - text: "Here is the list of psychiatrists available near you. <br>Click here to <a href='https://www.google.com/search?q=psychiatrists+near+me' title='Go to Hospitals Near You' target='_blank'>View Hospitals Near You</a>"
+
+  utter_appointment_list_provided:
+    - text: "Hope i was of some help to you <br> Any other queries?"
+
 
 session_config:
   session_expiration_time: 60

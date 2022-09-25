@@ -28,6 +28,7 @@ stories:
     steps:
       - intent: med_not_helped
       - action: utter_med_not_helped
+      - action: utter_hospitals_near
 
   - story: med_helped_path
     steps:
@@ -47,7 +48,7 @@ stories:
       - intent: fracture_accepted
       - action: utter_fracture_details
       - intent: fracture_details
-      - action: utter_fracture_confirm
+      - action: utter_orthopedic_hospital_near
 
   - story: headache_path
     steps:
@@ -68,3 +69,64 @@ stories:
     steps:
       - intent: tension_headache
       - action: utter_tension_headache
+
+  - story: appointment_booking path
+    steps:
+      - intent: qu_appointment
+      - action: utter_which_doctor
+      - intent: general_practitioner
+      - action: utter_general_practitioner
+      - action: utter_hospitals_near
+
+  - story: ent_appointment path
+    steps:
+      - intent: ent_specialist
+      - action: utter_ent_specialist
+      - action: utter_appointment_list_provided
+
+  - story: homeopathy_appointment path
+    steps:
+      - intent: homeopathy
+      - action: utter_homeopathy
+      - action: utter_appointment_list_provided
+
+  - story: ayurveda_appointment path
+    steps:
+      - intent: ayurveda
+      - action: utter_ayurveda
+      - action: utter_appointment_list_provided
+
+
+  - story: pediatrician_appointment path
+    steps:
+      - intent: pediatrician
+      - action: utter_pediatrician
+      - action: utter_appointment_list_provided
+
+
+  - story: dermatologist_appointment path
+    steps:
+      - intent: dermatologist
+      - action: utter_dermatologist
+      - action: utter_appointment_list_provided
+
+
+  - story: dentist_appointment path
+    steps:
+      - intent: dentist
+      - action: utter_dentist
+      - action: utter_appointment_list_provided
+
+
+  - story: gynaecologist_appointment path
+    steps:
+      - intent: gynaecologist
+      - action: utter_gynaecologist
+      - action: utter_appointment_list_provided
+
+
+  - story: psychiatrist_appointment path
+    steps:
+      - intent: psychiatrist
+      - action: utter_psychiatrist
+      - action: utter_appointment_list_provided

@@ -40,15 +40,22 @@ nlu:
 
   - intent: cold
     examples: |
-      - I have a cough
+      - I have  cough
       - I have a cold
+      - coughing
+      - cold
+      - i have been coughing
 
   - intent: cold_sym
     examples: |
       - My nose is choked
+      - choked nose
       - My chest is aching
+      - chest pain
       - My nose is itching
+      - itchy nose
       - My throat is itching
+      - itchy throat
 
   - intent: cold_confirm
     examples: |
@@ -65,6 +72,7 @@ nlu:
       - i am not feeling better
       - medicine did not helped me
       - i am not feeling well
+      - No
 
   - intent: med_helped
     examples: |
@@ -91,8 +99,10 @@ nlu:
   - intent: fever_sym
     examples: |
       - My body temperature has raised
+      - body temperature is high
       - I am shivering
       - I am feeling weak
+      - weakness
       - I have weakness in my body
       - i am having fever
       - fever
@@ -119,6 +129,7 @@ nlu:
       - yes it is hurting
       - it is bleeding
       - blood is coming out
+      - yes i got hurt
 
   - intent: headache
     examples: |
@@ -126,6 +137,7 @@ nlu:
       - i am having pain in forehead
       - i have head pain
       - pain in head
+      - head pain
 
   - intent: migrane
     examples: |
@@ -144,3 +156,104 @@ nlu:
       - i have a tension headache
       - tension headache
       - tension
+
+  - intent: qu_appointment
+    examples: |
+      - I want to book an Appointment
+      - book Appointment
+      - appointment with doctor
+      - doctor appointment
+      - i want to book appointment
+
+  - intent: general_practitioner
+    examples: |
+      - general physician
+      - general doctor
+      - medical practitioner
+      - physician
+      - family doctor
+      - health practitioner
+
+  - intent: ent_specialist
+    examples: |
+      - ent specialist
+      - ent doctor
+      - e n t specialist
+      - e n t doctor
+      - ear specialist
+      - ear doctor
+      - nose specialist
+      - nose doctor
+      - throat specialist
+      - throat doctor
+      - ear nose throat specialist
+      - ear nose throat doctor
+
+  - intent: homeopathy
+    examples: |
+      - homeopathy specialist
+      - homeopathy doctor
+      - ayush homoeopath
+      - homoeopath
+      - homeopathic
+      - homoeopathic
+      - homoeopaths
+
+  - intent: ayurveda
+    examples: |
+      - ayurveda
+      - ayush ayurveda
+      - traditional
+      - ayurvedic
+      - ayurvedic specialist
+      - ayurveda specialist
+
+  - intent: pediatrician
+    examples: |
+      - pediatrician
+      - pediatricians
+      - pediatrist
+      - child specialist
+      - children specialist
+      - child doctor
+      - children doctor
+
+  - intent: dermatologist
+    examples: |
+      - Dermatologist
+      - dermatology
+      - Dermatologic
+
+  - intent: dentist
+    examples: |
+      - dentist
+      - tooth doctor
+      - teeth doctor
+      - tooth pain
+      - teeth pain
+      - pain in teeth
+
+  - intent: gynaecologist
+    examples: |
+      - gynaecologist
+      - pregnant
+      - period cramps
+      - mood swings
+      - periods
+      - abdominal pain
+      - labour pain
+      - menstrual cycle
+      - puberty
+      - blood transfusion
+      - breaking of water
+
+  - intent: psychiatrist
+    examples: |
+      - psychiatrist
+      - sycho
+      - mental problem
+      - mental
+      - brain
+
+
+
